@@ -1,0 +1,289 @@
+/* ==========================
+   KING JACXN BOND
+   LUXURY WEBSITE CSS
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0b0b0b;
+color:#ffffff;
+overflow-x:hidden;
+line-height:1.8;
+}
+
+/* ==========================
+   CUSTOM SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+background:#d4af37;
+border-radius:20px;
+}
+
+/* ==========================
+   LED WELCOME
+========================== */
+
+.led-banner{
+background:#000;
+padding:20px;
+text-align:center;
+font-size:50px;
+font-weight:bold;
+letter-spacing:10px;
+border-bottom:3px solid #d4af37;
+}
+
+.led-banner span{
+animation:ledGlow 2s infinite;
+display:inline-block;
+}
+
+.led-banner span:nth-child(1){animation-delay:.2s;}
+.led-banner span:nth-child(2){animation-delay:.4s;}
+.led-banner span:nth-child(3){animation-delay:.6s;}
+.led-banner span:nth-child(4){animation-delay:.8s;}
+.led-banner span:nth-child(5){animation-delay:1s;}
+.led-banner span:nth-child(6){animation-delay:1.2s;}
+.led-banner span:nth-child(7){animation-delay:1.4s;}
+
+@keyframes ledGlow{
+
+0%{
+color:#d4af37;
+text-shadow:0 0 5px #d4af37;
+}
+
+50%{
+color:#ffb6c1;
+text-shadow:
+0 0 10px #ffb6c1,
+0 0 20px #ffb6c1,
+0 0 40px #ffb6c1;
+}
+
+100%{
+color:#d4af37;
+text-shadow:0 0 5px #d4af37;
+}
+
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+background:#000;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:2px solid #d4af37;
+}
+
+.logo-area{
+text-align:left;
+}
+
+.main-logo{
+font-family:'Cinzel',serif;
+font-size:38px;
+color:#d4af37;
+}
+
+.logo-tagline{
+font-size:13px;
+color:#ffb6c1;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+color:#fff;
+text-decoration:none;
+font-weight:600;
+transition:.4s;
+}
+
+nav ul li a:hover{
+color:#d4af37;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:50px;
+background:
+linear-gradient(
+rgba(0,0,0,.75),
+rgba(0,0,0,.75)
+),
+url('hero.jpg');
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h2{
+font-size:75px;
+font-family:'Cinzel',serif;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:20px;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.gold-btn,
+.pink-btn{
+display:inline-block;
+padding:15px 35px;
+margin:10px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+transition:.4s;
+cursor:pointer;
+border:none;
+}
+
+.gold-btn{
+background:#d4af37;
+color:#000;
+}
+
+.gold-btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 25px #d4af37;
+}
+
+.pink-btn{
+background:#ffb6c1;
+color:#000;
+}
+
+.pink-btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 25px #ffb6c1;
+}
+
+/* ==========================
+   GENERAL SECTIONS
+========================== */
+
+section{
+padding:90px 8%;
+}
+
+section h2{
+text-align:center;
+font-size:42px;
+font-family:'Cinzel',serif;
+color:#d4af37;
+margin-bottom:30px;
+}
+
+/* ==========================
+   LUXURY BOX
+========================== */
+
+.luxury-box{
+background:#121212;
+padding:40px;
+border-radius:20px;
+border:2px solid #d4af37;
+box-shadow:0 0 25px rgba(212,175,55,.25);
+}
+
+/* ==========================
+   MANAGEMENT
+========================== */
+
+.management-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.manager-card{
+background:#141414;
+padding:30px;
+border:2px solid #d4af37;
+border-radius:20px;
+text-align:center;
+transition:.4s;
+}
+
+.manager-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(212,175,55,.4);
+}
+
+.manager-card h3{
+color:#ffb6c1;
+margin-bottom:10px;
+}
+
+/* ==========================
+   VALUES
+========================== */
+
+.value-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.value-card{
+background:#141414;
+padding:30px;
+border-radius:20px;
+border:2px solid #d4af37;
+text-align:center;
+}
+
+.value-card h3{
+color:#ffb6c1;
+margin-bottom:15px;
+}
